@@ -28,19 +28,19 @@ body {
   line-height: 1.55;
 }
 
-body::before {
+body.has-interactive-bg::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(760px circle at var(--mouse-x) var(--mouse-y), rgba(69, 129, 142, 0.28), rgba(69, 129, 142, 0) 62%),
-    radial-gradient(700px circle at var(--mouse-x-2) var(--mouse-y-2), rgba(132, 78, 167, 0.22), rgba(132, 78, 167, 0) 66%),
-    radial-gradient(680px circle at var(--mouse-x-3) var(--mouse-y-3), rgba(233, 122, 67, 0.16), rgba(233, 122, 67, 0) 67%),
-    radial-gradient(820px circle at 12% 88%, rgba(63, 127, 194, 0.16), rgba(63, 127, 194, 0) 68%),
+    radial-gradient(980px circle at var(--mouse-x) var(--mouse-y), rgba(69, 129, 142, 0.22), rgba(69, 129, 142, 0) 72%),
+    radial-gradient(940px circle at var(--mouse-x-2) var(--mouse-y-2), rgba(132, 78, 167, 0.18), rgba(132, 78, 167, 0) 74%),
+    radial-gradient(900px circle at var(--mouse-x-3) var(--mouse-y-3), rgba(233, 122, 67, 0.12), rgba(233, 122, 67, 0) 75%),
+    radial-gradient(980px circle at 12% 88%, rgba(63, 127, 194, 0.12), rgba(63, 127, 194, 0) 76%),
     linear-gradient(180deg, #222226 0%, #171717 100%);
-  filter: saturate(118%);
+  filter: blur(6px) saturate(112%);
 }
 
 .container {
