@@ -6,13 +6,21 @@ description: "Getting Notes ready for the Instagram iPad App"
 
 # Notes Readiness on Instagram iPad
 
-## Context
-After years of users wanting a real iPad app for Instagram, we launched one in September 2025. This was a huge effort across the company since the app had legacy code and assumptions about a fixed screen size throughout. 
+<div style="display:flex; gap:2.75rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;">
+  <div style="flex:1 1 540px; min-width:280px;">
+    <h2 style="margin-top:0;">Context</h2>
+    <p>After years of users wanting a real iPad app for Instagram, we launched one in September 2025. This was a huge effort across the company since the app had legacy code and assumptions about a fixed screen size throughout.</p>
+    <h2>My Role</h2>
+    <ul>
+      <li>Audited the Notes surface for iPad readiness.</li>
+      <li>Owned getting the Notes surface ready by leveraging new adaptive frameworks.</li>
+    </ul>
+  </div>
 
-
-## My Role
-- Audited the Notes surface for iPad readiness 
-- Owned getting the Notes surface ready by leveraging new adaptive frameworks
+  <aside style="flex:1 1 320px; min-width:280px;">
+    <img src="../../images/instagram-ipad.png" alt="Instagram iPad app interface showing large-screen layout and feed interactions." style="display:block; width:100%; height:auto; border-radius:12px; border:1px solid #313131;" />
+  </aside>
+</div>
 
 
 ## In the Press

@@ -6,7 +6,7 @@ description: "Building a 0->1 Subscriptions product for Instagram"
 
 # Instagram Creator Subscriptions
 
-<div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;">
+<div style="display:flex; gap:2.75rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;">
   <div style="flex:1 1 540px; min-width:280px;">
     <h2 style="margin-top:0;">Context</h2>
     <p>Instagram Creator Subscriptions was a 0→1 monetization product designed to help creators build recurring revenue and deepen relationships with their most engaged followers. The launch required building new subscriber and creator-facing experiences across iOS while coordinating closely with product, design, backend, and platform teams for a high-visibility U.S. launch.</p>
@@ -41,6 +41,30 @@ description: "Building a 0->1 Subscriptions product for Instagram"
   </p>
   <p style="margin:0; color:#c2c2bb;">
     Official product announcement covering Instagram Subscriptions and the initial creator benefits rollout.
+  </p>
+</a>
+
+<a href="https://www.theverge.com/2023/11/6/23948770/instagram-paid-subscriptions-million-milestone" target="_blank" rel="noreferrer" style="display:block; margin-top:0.75rem; padding:1rem; border:1px solid #313131; border-radius:12px; background:#232323; text-decoration:none;">
+  <p style="margin:0 0 0.4rem 0; color:#efefe9; font-weight:600;">
+    Instagram’s paid creator subscriptions are still a tiny business
+  </p>
+  <p style="margin:0 0 0.55rem 0; color:#c2c2bb; font-size:0.92rem;">
+    The Verge • November 6, 2023
+  </p>
+  <p style="margin:0; color:#c2c2bb;">
+    Industry analysis of Instagram’s creator subscriptions milestone and broader monetization trajectory.
+  </p>
+</a>
+
+<a href="https://9to5mac.com/2022/07/14/instagram-subscriptions-increase-creators-revenue/" target="_blank" rel="noreferrer" style="display:block; margin-top:0.75rem; padding:1rem; border:1px solid #313131; border-radius:12px; background:#232323; text-decoration:none;">
+  <p style="margin:0 0 0.4rem 0; color:#efefe9; font-weight:600;">
+    Instagram announces Subscriptions feature to increase creators’ revenue
+  </p>
+  <p style="margin:0 0 0.55rem 0; color:#c2c2bb; font-size:0.92rem;">
+    9to5Mac • July 14, 2022
+  </p>
+  <p style="margin:0; color:#c2c2bb;">
+    Early launch coverage detailing subscriber chats, exclusive content, and profile subscription experiences.
   </p>
 </a>
 
