@@ -6,6 +6,12 @@
   --muted: #c2c2bb;
   --accent: #45818e;
   --shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  --mouse-x: 50vw;
+  --mouse-y: 40vh;
+  --mouse-x-2: 62vw;
+  --mouse-y-2: 30vh;
+  --mouse-x-3: 38vw;
+  --mouse-y-3: 66vh;
 }
 
 * {
@@ -17,9 +23,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: radial-gradient(1200px at 90% -10%, #2b2b2b 0%, var(--bg) 35%);
+  background: #171717;
   color: var(--text);
   line-height: 1.55;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(760px circle at var(--mouse-x) var(--mouse-y), rgba(69, 129, 142, 0.28), rgba(69, 129, 142, 0) 62%),
+    radial-gradient(700px circle at var(--mouse-x-2) var(--mouse-y-2), rgba(132, 78, 167, 0.22), rgba(132, 78, 167, 0) 66%),
+    radial-gradient(680px circle at var(--mouse-x-3) var(--mouse-y-3), rgba(233, 122, 67, 0.16), rgba(233, 122, 67, 0) 67%),
+    radial-gradient(820px circle at 12% 88%, rgba(63, 127, 194, 0.16), rgba(63, 127, 194, 0) 68%),
+    linear-gradient(180deg, #222226 0%, #171717 100%);
+  filter: saturate(118%);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
 }
 
 a {
