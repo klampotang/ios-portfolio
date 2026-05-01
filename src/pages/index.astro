@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const workItems = [
+  {
+    title: "Spotify x Notes Music Integration",
+    summary: "Led a year-long partnership with Spotify to display currently streaming music on Notes.",
+    tags: ["Partner Integration", "Technical Design", "Media Sharing"],
+    href: "/case-studies/spotify-notes-integration"
+  },
+  {
+    title: "Birthday Notes",
+    summary: "Proposed and built Instagram’s first successful birthday product (increasing Instagram teen birthday sharing opt-in rate by 8X)",
+    tags: ["Product Strategy", "Roadmapping", "Vibe-coded Android"],
+    href: "/case-studies/birthday-notes"
+  },
+  {
+    title: "Notes iPad Readiness",
+    summary: "Led Notes’s iPad readiness, refactoring legacy phone-only layout assumptions and migrating our surfaces to support responsive, dynamic screen sizes for Instagram’s iPad launch.",
+    tags: ["UIKit", "Responsive UI"],
+    href: "/case-studies/notes-ipad"
+  },
+  {
+    title: "Creator Subscriptions",
+    summary: "Founding iOS engineer on Instagram Creator Subscriptions, taking the product from 0→1 and building core flagship features for the U.S. launch",
+    tags: ["0 -> Product", "Payments UX"],
+    href: "/case-studies/creator-subs"
+  }
+];
+---
+
+<BaseLayout
+  title="Senior iOS Engineer | Portfolio"
+  description="Portfolio of a senior iOS engineer focused on scalable mobile architecture, performance, and product impact."
+>
+  <section class="hero">
+    <h1><span class="hero-name">Kelly Lampotang</span> </h1>
+    <p>
+      Senior iOS engineer with strong product intuition, known for influencing roadmap and leading ideas from 0→1 to launch across multiple Instagram surfaces
+    </p>
+    <div class="pill-links">
+      <a class="pill-link" href="#selected-work">Featured Work</a>
+      <a class="pill-link" href="#about">About</a>
+      <a class="pill-link" href="#links">Resume & Contact</a>
+    </div>
+  </section>
+
+  <section class="section" id="selected-work">
+    <h2>Featured Work</h2>
+    <div class="card-grid">
+      {
+        workItems.map((item) => (
+          <article class="card">
+            <h3><a href={item.href}>{item.title}</a></h3>
+            <p>{item.summary}</p>
+            <div class="meta">
+              {item.tags.map((tag) => <span class="chip">{tag}</span>)}
+            </div>
+            <div class="card-brand" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <rect x="4.5" y="4.5" width="15" height="15" rx="4.5"></rect>
+                <circle cx="12" cy="12" r="3.5"></circle>
+                <circle cx="16.7" cy="7.3" r="1.1"></circle>
+              </svg>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About</h2>
+    <p>
+      I’m a Senior iOS Engineer based in San Francisco, currently building social products at Instagram. My work has spanned Instagram Notes, Creator Subscriptions, and Stories, with experience shipping 0→1 launches, high-visibility partner integrations, and polished mobile experiences at global scale.
+    </p>
+    <p>
+      I bring a product-minded approach to engineering: translating ambiguous ideas into pragmatic technical plans, partnering closely with design and product, and building iOS systems that balance performance and craft. 
+    </p>
+    <p>
+      Outside of work, I enjoy skiing, surfing, and also run my own floral business,
+      <a href="https://www.instagram.com/floralgalkel/" target="_blank" rel="noreferrer">Floralgal Kel</a>.
+    </p>
+  </section>
+
+  <section class="section links" id="links">
+    <h2>Resume & Contact</h2>
+    <div class="links-list">
+      <a href="https://docs.google.com/document/d/18MwYnU-6VD2Q04viMH0RBYJzPkSbIOv6Z4SMjMdaOZQ/edit?tab=t.0" target="_blank" rel="noreferrer">
+        Resume
+      </a>
+      <a href="mailto:klampotang@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/klampotang" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </section>
+
+</BaseLayout>
