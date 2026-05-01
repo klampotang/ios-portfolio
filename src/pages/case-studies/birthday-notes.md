@@ -18,9 +18,9 @@ Recognizing the need for a subtle way to share your birthday with mutual followe
 ## What it Looks Like
 <div style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;">
   <div style="flex:1 1 320px; min-width:280px;">
-    <img src="/images/birthday-notes.png" alt="Birthday Notes launch creative showing Instagram DM interface and birthday note experience." style="display:block; width:100%; height:auto; border-radius:12px; border:1px solid #313131;" />
+    <img src="../../images/birthday-notes.png" alt="Birthday Notes launch creative showing Instagram DM interface and birthday note experience." style="display:block; width:100%; height:auto; border-radius:12px; border:1px solid #313131;" />
   </div>
   <div style="flex:1 1 320px; min-width:280px;">
-    <img src="/images/birthday-notes-2.png" alt="Second Birthday Notes launch screenshot showing conversation UI and celebratory effects." style="display:block; width:100%; height:auto; border-radius:12px; border:1px solid #313131;" />
+    <img src="../../images/birthday-notes-2.png" alt="Second Birthday Notes launch screenshot showing conversation UI and celebratory effects." style="display:block; width:100%; height:auto; border-radius:12px; border:1px solid #313131;" />
   </div>
 </div>
