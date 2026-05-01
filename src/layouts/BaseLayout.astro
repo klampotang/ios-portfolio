@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title, description = "Senior iOS engineer portfolio." } = Astro.props;
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
 ---
 
 <!doctype html>
@@ -15,6 +16,13 @@ const { title, description = "Senior iOS engineer portfolio." } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <title>{title}</title>
   </head>
   <body>
