@@ -1,31 +1,33 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 
 const workItems = [
   {
     title: "Spotify x Notes Music Integration",
     summary: "Led a year-long partnership with Spotify to display currently streaming music on Notes.",
     tags: ["Partner Integration", "Technical Design", "Media Sharing"],
-    href: `${baseUrl}case-studies/spotify-notes-integration`
+    href: `${baseUrl}case-studies/spotify-notes-integration/`
   },
   {
     title: "Birthday Notes",
     summary: "Proposed and built Instagram’s first successful birthday product (increasing Instagram teen birthday sharing opt-in rate by 8X)",
     tags: ["Product Strategy", "Roadmapping", "Vibe-coded Android"],
-    href: `${baseUrl}case-studies/birthday-notes`
+    href: `${baseUrl}case-studies/birthday-notes/`
   },
   {
     title: "Notes iPad Readiness",
     summary: "Led Notes’s iPad readiness, refactoring legacy phone-only layout assumptions and migrating our surfaces to support responsive, dynamic screen sizes for Instagram’s iPad launch.",
     tags: ["UIKit", "Responsive UI"],
-    href: `${baseUrl}case-studies/notes-ipad`
+    href: `${baseUrl}case-studies/notes-ipad/`
   },
   {
     title: "Creator Subscriptions",
     summary: "Founding iOS engineer on Instagram Creator Subscriptions, taking the product from 0→1 and building core flagship features for the U.S. launch",
     tags: ["0 -> Product", "Payments UX"],
-    href: `${baseUrl}case-studies/creator-subs`
+    href: `${baseUrl}case-studies/creator-subs/`
   }
 ];
 ---
@@ -52,6 +54,7 @@ const workItems = [
       {
         workItems.map((item) => (
           <article class="card">
+            <a class="card-link" href={item.href} aria-label={`Open case study: ${item.title}`}></a>
             <h3><a href={item.href}>{item.title}</a></h3>
             <p>{item.summary}</p>
             <div class="meta">
