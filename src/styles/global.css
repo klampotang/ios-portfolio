@@ -109,8 +109,7 @@ a:hover {
 
 .card h3,
 .card p,
-.card .meta,
-.card .card-brand {
+.card .meta {
   position: relative;
   z-index: 2;
 }
