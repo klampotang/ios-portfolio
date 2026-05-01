@@ -37,3 +37,15 @@ We partnered with Spotify to build a new way for users to share what they were c
   </p>
 </a>
 
+<a href="https://torro.io/blog/instagram-notes-spotify" target="_blank" rel="noreferrer" style="display:block; margin-top:0.75rem; padding:1rem; border:1px solid #313131; border-radius:12px; background:#232323; text-decoration:none;">
+  <p style="margin:0 0 0.4rem 0; color:#efefe9; font-weight:600;">
+    New: Spotify Sharing Comes to Instagram Notes
+  </p>
+  <p style="margin:0 0 0.55rem 0; color:#c2c2bb; font-size:0.92rem;">
+    Torro • June 13, 2025
+  </p>
+  <p style="margin:0; color:#c2c2bb;">
+    Third-party coverage of the Spotify + Instagram Notes real-time listening integration and how it works for users.
+  </p>
+</a>
+
