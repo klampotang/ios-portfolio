@@ -1,32 +1,44 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: "Case Study: In-App Camera Reliability Initiative"
-description: "How I improved capture reliability and crash rates in Instagram's iOS camera stack."
+title: "Notes iPad Readiness"
+description: "Getting Notes ready for the Instagram iPad App"
 ---
 
-# In-App Camera Reliability Initiative
+# Notes Readiness on Instagram iPad
 
 ## Context
-Camera is a mission-critical entry point. Small reliability issues had outsized impact on creation confidence and retention.
+After years of users wanting a real iPad app for Instagram, we launched one in September 2025. This was a huge effort across the company since the app had legacy code and assumptions about a fixed screen size throughout. 
 
-## Goal
-Lower camera-related failure rates and crash incidence while maintaining fast open-to-capture behavior.
 
 ## My Role
-- Drove reliability-focused roadmap items for the iOS camera surface.
-- Coordinated issue triage across client, backend, and quality teams.
-- Defined quality bars and release guardrails for camera changes.
+- Audited the Notes surface for iPad readiness 
+- Owned getting the Notes surface ready by leveraging new adaptive frameworks
 
-## What I Did
-- Hardened capture-session state transitions and fallback behavior.
-- Added diagnostics around permission edges, interruptions, and hardware variance.
-- Introduced safer retries for known transient failure classes.
-- Improved rollout discipline with experiment flags and targeted cohort monitoring.
 
-## Outcome
-- Reduced camera failure rates in production.
-- Lowered crash volume in camera-adjacent call stacks.
-- Improved confidence in shipping camera features to broad audiences.
+## In the Press
+<a href="https://techcrunch.com/2025/09/03/instagram-is-finally-launching-an-ipad-app/" target="_blank" rel="noreferrer" style="display:block; margin-top:0.75rem; padding:1rem; border:1px solid #313131; border-radius:12px; background:#232323; text-decoration:none;">
+  <p style="margin:0 0 0.4rem 0; color:#efefe9; font-weight:600;">
+    Instagram is finally launching an iPad app
+  </p>
+  <p style="margin:0 0 0.55rem 0; color:#c2c2bb; font-size:0.92rem;">
+    TechCrunch • September 3, 2025
+  </p>
+  <p style="margin:0; color:#c2c2bb;">
+    Coverage of Instagram’s iPad app launch and the product experience designed for larger screens.
+  </p>
+</a>
 
-## Takeaways
-Reliability is a product feature; it requires clear ownership, measurement, and disciplined rollout mechanics.
+<a href="https://www.reuters.com/business/media-telecom/instagram-rolls-out-ipad-app-with-reels-center-take-tiktok-2025-09-03/" target="_blank" rel="noreferrer" style="display:block; margin-top:0.75rem; padding:1rem; border:1px solid #313131; border-radius:12px; background:#232323; text-decoration:none;">
+  <p style="margin:0 0 0.4rem 0; color:#efefe9; font-weight:600;">
+    Instagram rolls out iPad app with Reels centered
+  </p>
+  <p style="margin:0 0 0.55rem 0; color:#c2c2bb; font-size:0.92rem;">
+    Reuters • September 3, 2025
+  </p>
+  <p style="margin:0; color:#c2c2bb;">
+    Reuters coverage of the iPad launch and strategic product positioning around short-form video consumption.
+  </p>
+</a>
+
+
+
