@@ -36,7 +36,7 @@ body.has-interactive-bg::before {
   z-index: 0;
   background:
     radial-gradient(980px circle at var(--mouse-x) var(--mouse-y), rgba(69, 129, 142, 0.22), rgba(69, 129, 142, 0) 72%),
-    radial-gradient(940px circle at var(--mouse-x-2) var(--mouse-y-2), rgba(132, 78, 167, 0.18), rgba(132, 78, 167, 0) 74%),
+    radial-gradient(940px circle at var(--mouse-x-2) var(--mouse-y-2), rgba(58, 132, 178, 0.19), rgba(58, 132, 178, 0) 74%),
     radial-gradient(900px circle at var(--mouse-x-3) var(--mouse-y-3), rgba(233, 122, 67, 0.12), rgba(233, 122, 67, 0) 75%),
     radial-gradient(980px circle at 12% 88%, rgba(63, 127, 194, 0.12), rgba(63, 127, 194, 0) 76%),
     linear-gradient(180deg, #222226 0%, #171717 100%);
