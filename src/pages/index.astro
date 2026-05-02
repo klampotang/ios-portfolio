@@ -54,9 +54,8 @@ const workItems = [
     <div class="card-grid">
       {
         workItems.map((item) => (
-          <article class="card">
-            <a class="card-link" href={item.href} aria-label={`Open case study: ${item.title}`}></a>
-            <h3><a href={item.href}>{item.title}</a></h3>
+          <a class="card" href={item.href} aria-label={`Open case study: ${item.title}`}>
+            <h3>{item.title}</h3>
             <p>{item.summary}</p>
             <div class="meta">
               {item.tags.map((tag) => <span class="chip">{tag}</span>)}
@@ -68,7 +67,7 @@ const workItems = [
                 <circle cx="16.7" cy="7.3" r="1.1"></circle>
               </svg>
             </div>
-          </article>
+          </a>
         ))
       }
     </div>
@@ -91,11 +90,18 @@ const workItems = [
   <section class="section links" id="links">
     <h2>Resume & Contact</h2>
     <div class="links-list">
-      <a href="https://docs.google.com/document/d/18MwYnU-6VD2Q04viMH0RBYJzPkSbIOv6Z4SMjMdaOZQ/edit?tab=t.0" target="_blank" rel="noreferrer">
+      <a
+        class="pill-link contact-pill"
+        href="https://docs.google.com/document/d/18MwYnU-6VD2Q04viMH0RBYJzPkSbIOv6Z4SMjMdaOZQ/edit?tab=t.0"
+        target="_blank"
+        rel="noreferrer"
+      >
         Resume
       </a>
-      <a href="mailto:klampotang@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/klampotang" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="pill-link contact-pill" href="mailto:klampotang@gmail.com">Email</a>
+      <a class="pill-link contact-pill" href="https://www.linkedin.com/in/klampotang" target="_blank" rel="noreferrer">
+        LinkedIn
+      </a>
     </div>
   </section>
 
